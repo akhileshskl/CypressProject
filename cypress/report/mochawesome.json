@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-03T13:03:25.835Z",
+    "end": "2021-05-03T13:04:13.298Z",
+    "duration": 47463,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2c0051cd-88fb-49d5-86a0-a68d7c00bccc",
+      "title": "",
+      "fullFile": "cypress/integration/MyTest.spec.js",
+      "file": "cypress/integration/MyTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c4e2625-7926-400d-8712-1b3c7a8de7a1",
+          "title": "My first test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to cypress io page",
+              "fullTitle": "My first test Navigate to cypress io page",
+              "timedOut": null,
+              "duration": 10894,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(`https://example.cypress.io`);\ncy.contains('type').click();\ncy.url().should('include', '/commands/actions');\ncy.get('#email1').type('akhi@gmail.com').should('have.value', 'akhi@gmail.com');",
+              "err": {},
+              "uuid": "e5c4680c-0bed-4229-b1f1-aad003e47966",
+              "parentUUID": "7c4e2625-7926-400d-8712-1b3c7a8de7a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navigate to orangehrmlive page",
+              "fullTitle": "My first test Navigate to orangehrmlive page",
+              "timedOut": null,
+              "duration": 18376,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(`https://opensource-demo.orangehrmlive.com/`);\ncy.get('#txtUsername').type('Admin');\ncy.get('#txtPassword').type('admin123');\ncy.get('input[name=\"Submit\"]').click();\ncy.url().should('include', '/dashboard');\ncy.get(':nth-child(2) > .quickLaunge > a > .quickLinkText').click();\ncy.url().should('include', '/leave/viewLeaveList');\ncy.get('#leaveList_chkSearchFilter_1').click();\ncy.get('#leaveList_chkSearchFilter_-1').click();\ncy.get('#leaveList_txtEmployee_empName').type('Sara Tencrady');\ncy.get('#btnSearch').click();\ncy.get('a').should('contain', 'Sara Tencrady');",
+              "err": {},
+              "uuid": "ef74f373-beb9-475b-a431-97d5bb2d50d1",
+              "parentUUID": "7c4e2625-7926-400d-8712-1b3c7a8de7a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e5c4680c-0bed-4229-b1f1-aad003e47966",
+            "ef74f373-beb9-475b-a431-97d5bb2d50d1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29270,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportFileName": "My-Report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

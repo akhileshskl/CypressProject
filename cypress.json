@@ -1,0 +1,11 @@
+{
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportFileName": "My-Report"
+  },
+  "video": false
+
+}
